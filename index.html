@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未瑠 / Miru | 建築パースクリエイター</title>
+    <meta name="description" content="「ずっと住みたい」と思える未来の空間を形にします。建築・インテリアパース / 3DCG制作 | 未瑠 / Miru">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero.jpg" alt="建築パースイメージ" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-label fade-in-up">建築パース / 3DCG Creator</p>
+            <h1 class="hero-title fade-in-up delay-1">
+                「ずっと住みたい」と思える<br>未来の空間を、形に。
+            </h1>
+            <a href="#works" class="hero-btn fade-in-up delay-3">Works を見る</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="works-section" id="works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Works</span>
+                <h2 class="section-title">作品</h2>
+            </div>
+
+            <!-- Filter -->
+            <div class="filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pars">パース図</button>
+                <button class="filter-btn" data-filter="cad">3DCAD</button>
+                <button class="filter-btn" data-filter="furniture">家具製作</button>
+                <button class="filter-btn" data-filter="exterior">外観パース</button>
+            </div>
+
+            <!-- Works Grid -->
+            <div class="works-grid">
+
+                <div class="work-card reveal" data-category="pars">
+                    <div class="work-img-wrap">
+                        <img src="images/work1.jpg" alt="LDK インテリアパース">
+                        <div class="work-overlay"><span>View</span></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>LDK インテリアパース</h3>
+                        <span class="work-tag">IMAGE PERS</span>
+                    </div>
+                </div>
+
+                <div class="work-card reveal" data-category="pars">
+                    <div class="work-img-wrap">
+                        <img src="images/work2.jpg" alt="LDK インテリアパース">
+                        <div class="work-overlay"><span>View</span></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>LDK インテリアパース</h3>
+                        <span class="work-tag">IMAGE PERS</span>
+                    </div>
+                </div>
+
+                <div class="work-card reveal" data-category="pars">
+                    <div class="work-img-wrap">
+                        <img src="images/work3.jpg" alt="スペース空間パース">
+                        <div class="work-overlay"><span>View</span></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>スペース空間パース</h3>
+                        <span class="work-tag">IMAGE PERS</span>
+                    </div>
+                </div>
+
+                <div class="work-card reveal" data-category="cad">
+                    <div class="work-img-wrap">
+                        <img src="images/work4.jpg" alt="リビングパース">
+                        <div class="work-overlay"><span>View</span></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>リビングパース</h3>
+                        <span class="work-tag">IMAGE PERS</span>
+                    </div>
+                </div>
+
+                <div class="work-card reveal" data-category="cad">
+                    <div class="work-img-wrap">
+                        <img src="images/work5.jpg" alt="LDK インテリアパース">
+                        <div class="work-overlay"><span>View</span></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>LDK インテリアパース</h3>
+                        <span class="work-tag">IMAGE PERS</span>
+                    </div>
+                </div>
+
+                <div class="work-card reveal" data-category="exterior">
+                    <div class="work-img-wrap">
+                        <img src="images/work6.jpg" alt="外観パース">
+                        <div class="work-overlay"><span>View</span></div>
+                    </div>
+                    <div class="work-info">
+                        <h3>外観パース</h3>
+                        <span class="work-tag">EXTERIOR PERS</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="works-more reveal">
+                <a href="https://foriio.com/Miru3D" target="_blank" class="btn-outline">foriioでもっと見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img reveal">
+                    <img src="images/about.jpg" alt="未瑠 / Miru">
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">未瑠 / Miru</h2>
+                    <p class="about-catch">「まだ見ぬ空間に、将来の暮らしを。」</p>
+                    <p class="about-text">
+                        建築・インテリアパース / 3DCGクリエイターとして活動しています。<br>
+                        不動産業界での実務経験を活かし、現場目線のリアルな空間表現を大切にしています。<br><br>
+                        「ずっと住み続けたくなる家」を、3DCGで見える化することをモットーに、
+                        住む人の未来を見据えた空間づくりをお手伝いします。
+                    </p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Blender</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SketchUp Pro</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Twinmotion</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-desc">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">ご用件</label>
+                    <textarea id="message" name="message" rows="6" placeholder="お仕事のご依頼・ご相談内容をご記入ください。" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-ja">未瑠</span>
+                    <span class="logo-slash">/</span>
+                    <span class="logo-en">Miru</span>
+                </div>
+                <div class="footer-sns">
+                    <a href="https://twitter.com/Miru3DCG" target="_blank" rel="noopener">X</a>
+                    <a href="https://www.instagram.com/miru3dcg/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://foriio.com/Miru3D" target="_blank" rel="noopener">foriio</a>
+                </div>
+                <p class="footer-copy">© 2026 未瑠 / Miru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&#x2715;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
