@@ -412,13 +412,14 @@ section { padding: 110px 0; }
 }
 
 .furniture-section {
-    margin-top: 80px;
+    margin-top: 320px;
 }
 .furniture-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.3fr 0.7fr;
     gap: 60px;
     align-items: center;
+    margin-left: -40px;
 }
 .furniture-img img {
     width: 100%;
