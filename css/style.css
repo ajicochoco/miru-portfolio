@@ -411,6 +411,37 @@ section { padding: 110px 0; }
     text-transform: uppercase;
 }
 
+.furniture-section {
+    margin-top: 80px;
+}
+.furniture-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.furniture-img img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+.furniture-content {
+    padding: 20px 0;
+}
+.furniture-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    color: var(--dark);
+    letter-spacing: 0.05em;
+}
+@media (max-width: 768px) {
+    .furniture-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
 .works-more {
     text-align: center;
     margin-top: 64px;
