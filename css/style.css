@@ -426,6 +426,7 @@ section { padding: 110px 0; }
     display: flex;
     align-items: flex-end;
     gap: 24px;
+    margin-left: -76px;
 }
 .furniture-img {
     flex: 1 1 auto;
@@ -439,7 +440,7 @@ section { padding: 110px 0; }
 }
 .furniture-img2 {
     flex: 0 0 auto;
-    margin-left: -420px;
+    margin-left: -344px;
 }
 .furniture-img2 img {
     display: block;
