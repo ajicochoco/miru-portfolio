@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=39">
+    <link rel="stylesheet" href="css/style.css?v=50">
 </head>
 <body>
 
@@ -60,9 +60,8 @@
             <div class="filter reveal">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="pars">パース図</button>
-                <button class="filter-btn" data-filter="cad">3DCAD</button>
-                <button class="filter-btn" data-filter="furniture">家具製作</button>
                 <button class="filter-btn" data-filter="exterior">外観パース</button>
+                <a href="#other-services" class="filter-btn">その他</a>
             </div>
 
             <!-- Works Grid -->
@@ -97,28 +96,6 @@
                     </div>
                     <div class="work-info">
                         <h3>スペース空間パース</h3>
-                        <span class="work-tag">IMAGE PERS</span>
-                    </div>
-                </div>
-
-                <div class="work-card reveal" data-category="cad">
-                    <div class="work-img-wrap">
-                        <img src="images/work4.jpg" alt="リビングパース">
-                        <div class="work-overlay"><span>View</span></div>
-                    </div>
-                    <div class="work-info">
-                        <h3>リビングパース</h3>
-                        <span class="work-tag">IMAGE PERS</span>
-                    </div>
-                </div>
-
-                <div class="work-card reveal" data-category="cad">
-                    <div class="work-img-wrap">
-                        <img src="images/work5.jpg" alt="LDK インテリアパース">
-                        <div class="work-overlay"><span>View</span></div>
-                    </div>
-                    <div class="work-info">
-                        <h3>LDK インテリアパース</h3>
                         <span class="work-tag">IMAGE PERS</span>
                     </div>
                 </div>
@@ -168,7 +145,7 @@
             </div>
 
             <!-- Furniture Section 3 (4 images in a row with captions) -->
-            <div class="furniture-section3">
+            <div class="furniture-section3" id="other-services">
                 <h3 class="furniture-section-title">Other Services</h3>
                 <div class="furniture-grid3 reveal">
                     <div class="furniture-item">
@@ -214,8 +191,8 @@
                     <p class="about-text">
                         建築・インテリアパース / 3DCGクリエイターとして活動しています。<br>
                         不動産業界での実務経験を活かし、現場目線のリアルな空間表現を大切にしています。<br><br>
-                        「ずっと住み続けたくなる家」を、3DCGで見える化することをモットーに、
-                        住む人の未来を見据えた空間づくりをお手伝いします。
+                        「ずっと住み続けたくなる家」を3DCGで丁寧に可視化し、<br>
+                        理想の暮らしを具体的に思い描ける空間をご提案します。
                     </p>
                     <div class="services-list">
                         <span class="service-item">3DCG制作</span>
@@ -238,9 +215,10 @@
                 <p class="section-desc">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
             </div>
             <form class="contact-form reveal" id="contactForm">
+                <input type="hidden" name="access_key" value="b9a6aa06-1f5e-4368-b0ad-222b9d223846">
                 <div class="form-group">
                     <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                    <input type="text" id="name" name="name" placeholder="田中 花子" required>
                 </div>
                 <div class="form-group">
                     <label for="email">メールアドレス</label>
@@ -283,6 +261,6 @@
         <img src="" alt="" class="lightbox-img" id="lightboxImg">
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 </html>

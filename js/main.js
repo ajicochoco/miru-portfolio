@@ -2,6 +2,14 @@
 // 未瑠 / Miru - main.js
 // ===========================
 
+// --- Hero: スクロール中にアドレスバーが伸縮しても高さが変わらないようにする ---
+function setStableVh() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+setStableVh();
+window.addEventListener('resize', setStableVh);
+window.addEventListener('orientationchange', setStableVh);
+
 // --- Hero: 画像フェードイン → カーソル移動でオーバーレイ＋テキスト出現 ---
 const heroSection = document.querySelector('.hero');
 let heroActivated = false;
@@ -49,7 +57,7 @@ const skillObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skill-fill').forEach(el => skillObserver.observe(el));
 
 // --- Category Filter ---
-const filterBtns = document.querySelectorAll('.filter-btn');
+const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
 const workCards = document.querySelectorAll('.work-card');
 
 filterBtns.forEach(btn => {
@@ -133,14 +141,35 @@ document.addEventListener('keydown', (e) => {
 
 // --- Contact Form ---
 const form = document.getElementById('contactForm');
-form?.addEventListener('submit', (e) => {
+form?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.btn-primary');
-    btn.textContent = '送信しました！';
-    btn.style.background = 'var(--accent-dark)';
-    setTimeout(() => {
-        btn.textContent = '送信する';
-        btn.style.background = '';
-        form.reset();
-    }, 3000);
+    const originalText = btn.textContent;
+    btn.textContent = '送信中...';
+
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+        });
+        const result = await response.json();
+
+        if (result.success) {
+            btn.textContent = '送信しました！';
+            btn.style.background = 'var(--accent-dark)';
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                form.reset();
+            }, 3000);
+        } else {
+            throw new Error(result.message || 'submit failed');
+        }
+    } catch (err) {
+        btn.textContent = '送信に失敗しました';
+        setTimeout(() => {
+            btn.textContent = originalText;
+        }, 3000);
+    }
 });
