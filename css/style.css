@@ -55,7 +55,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     box-shadow: 0 1px 24px var(--shadow);
 }
 .nav-container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 48px;
     display: flex;
@@ -92,6 +92,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     list-style: none;
 }
 .nav-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: var(--font-en);
     font-size: 12px;
     font-weight: 500;
@@ -110,6 +113,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     transition: width var(--transition);
 }
 .nav-links a:hover::after { width: 100%; }
+.nav-ja {
+    display: block;
+    font-family: var(--font-ja);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--text-light);
+    text-transform: none;
+    margin-top: 3px;
+}
 .nav-links a:hover { color: var(--accent); }
 
 .nav-toggle {
@@ -1011,6 +1024,11 @@ section { padding: 110px 0; }
     line-height: 2;
     color: var(--text-light);
 }
+.price-note a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+.price-note a:hover { color: var(--accent); }
 .price-cta {
     text-align: center;
     margin-top: 56px;
