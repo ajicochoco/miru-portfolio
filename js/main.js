@@ -161,11 +161,8 @@ form?.addEventListener('submit', async (e) => {
         if (result.success) {
             btn.textContent = '送信しました！';
             btn.style.background = 'var(--accent-dark)';
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.background = '';
-                form.reset();
-            }, 3000);
+            form.reset();
+            window.location.href = 'thanks.html';
         } else {
             throw new Error(result.message || 'submit failed');
         }

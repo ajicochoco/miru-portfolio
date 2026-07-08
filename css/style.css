@@ -941,3 +941,111 @@ section { padding: 110px 0; }
     .contact { padding-bottom: 0; }
     .footer { padding: 24px 0; }
 }
+
+/* ===========================
+   PRICE PAGE
+   =========================== */
+.price-section { padding-top: 180px; }
+.price-intro {
+    max-width: 640px;
+    margin: 0 auto 64px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.9;
+}
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.price-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 36px 28px;
+    box-shadow: 0 4px 24px var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+.price-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--shadow-hover);
+}
+.price-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+}
+.price-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.price-row:first-of-type { border-top: none; }
+.price-row-label {
+    font-size: 13px;
+    color: var(--text-light);
+    letter-spacing: 0.05em;
+}
+.price-row-value {
+    font-family: var(--font-en);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent-dark);
+    letter-spacing: 0.03em;
+}
+.price-card-desc {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+.price-note {
+    max-width: 640px;
+    margin: 56px auto 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+.price-cta {
+    text-align: center;
+    margin-top: 56px;
+}
+
+@media (max-width: 1024px) {
+    .price-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .price-section { padding-top: 140px; }
+    .price-grid { grid-template-columns: 1fr; gap: 20px; }
+    .price-intro { margin-bottom: 40px; }
+}
+
+/* ===========================
+   THANKS PAGE
+   =========================== */
+.thanks-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 140px 24px 80px;
+}
+.thanks-title {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 300;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+.thanks-text {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
