@@ -13,12 +13,15 @@ window.addEventListener('orientationchange', setStableVh);
 // --- Hero: 画像フェードイン → カーソル移動でオーバーレイ＋テキスト出現 ---
 const heroSection = document.querySelector('.hero');
 let heroActivated = false;
-document.addEventListener('mousemove', () => {
+function activateHero() {
     if (!heroActivated) {
         heroActivated = true;
         heroSection.classList.add('hero-active');
     }
-});
+}
+document.addEventListener('mousemove', activateHero);
+document.addEventListener('touchstart', activateHero, { passive: true });
+window.addEventListener('scroll', activateHero, { passive: true });
 
 // --- Navigation: スクロールで背景追加 ---
 const nav = document.getElementById('nav');
