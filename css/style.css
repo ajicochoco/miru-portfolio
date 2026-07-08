@@ -1007,8 +1007,8 @@ section { padding: 110px 0; }
     max-width: 640px;
     margin: 56px auto 0;
     text-align: center;
-    font-size: 12px;
-    line-height: 1.9;
+    font-size: 15px;
+    line-height: 2;
     color: var(--text-light);
 }
 .price-cta {
@@ -1048,4 +1048,34 @@ section { padding: 110px 0; }
     line-height: 2;
     color: var(--text-light);
     margin-bottom: 40px;
+}
+
+/* ===========================
+   TERMS PAGE
+   =========================== */
+.terms-section { padding-top: 180px; }
+.terms-list {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.terms-block {
+    padding: 32px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.terms-block:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+.terms-heading {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+}
+.terms-text {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .terms-section { padding-top: 140px; }
 }
