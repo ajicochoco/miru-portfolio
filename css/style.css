@@ -825,6 +825,20 @@ section { padding: 110px 0; }
     color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+.footer-legal a {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color var(--transition);
+}
+.footer-legal a:hover { color: var(--accent-light); }
+
 /* ===========================
    RESPONSIVE
    =========================== */
@@ -967,6 +981,32 @@ section { padding: 110px 0; }
     font-size: 15px;
     line-height: 1.9;
 }
+.delivery-badge {
+    max-width: 480px;
+    margin: -32px auto 56px;
+    padding: 20px 32px;
+    text-align: center;
+    background: rgba(123, 158, 173, 0.08);
+    border: 1px solid var(--accent-light);
+    border-radius: var(--radius);
+}
+.delivery-badge-label {
+    display: inline-block;
+    font-family: var(--font-en);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.delivery-badge-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--dark);
+}
+.delivery-badge-text strong { color: var(--accent-dark); }
+
 .price-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
