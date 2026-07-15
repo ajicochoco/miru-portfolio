@@ -2,6 +2,13 @@
 // 未瑠 / Miru - main.js
 // ===========================
 
+// --- PWA: オフライン対応のためService Workerを登録 ---
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    });
+}
+
 // --- Hero: スクロール中にアドレスバーが伸縮しても高さが変わらないようにする ---
 function setStableVh() {
     document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
